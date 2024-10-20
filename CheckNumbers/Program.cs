@@ -2,14 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-public static class NumberExtensions
-{
-    // Extension method to filter numbers based on a Func delegate
-    public static List<int> FilterNumbers(this List<int> numbers, Func<int, bool> filter)
-    {
-        return numbers.Where(filter).ToList();
-    }
-}
+
 
 class Program
 {
@@ -27,14 +20,6 @@ class Program
     }
 
     // Method to check if a number is even
-    static bool IsEven(int number)
-    {
-        return number % 2 == 0;
-    }
-
-    // Method to check if a number is odd
-    static bool IsOdd(int number)
-    {
-        return number % 2 != 0;
+   
     }
 }
